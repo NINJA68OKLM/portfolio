@@ -1,0 +1,105 @@
+
+
+
+/* Portfolio V2 */
+
+.sub.sub-menu>a
+{
+    padding: 10px 0px;
+    text-align: center;
+}
+.header.header
+{
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    align-items: center;
+    width: 175px;
+    height: 100vh
+}
+.header-item
+{
+    display: none;
+}
+.partone
+{
+    flex-direction: column;
+    justify-content: center;
+}
+.parttwo
+{
+    margin-top: 20px;
+}
+.partthree
+{
+    transform: translate(0px, -55px);
+}
+
+/* Elements généraux */
+
+main
+{
+    transform: translate(205px);
+}
+h1
+{
+    font-size: 32px;
+    text-align: left;
+}
+h2
+{
+    font-size: 25px;
+}
+.ligne
+{
+    flex-direction: row !important;
+}
+.bloc>p
+{
+    text-align: center;
+}
+.valign
+{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* .redirection.liste
+{
+    width: 300px;
+}
+.blanc
+{
+    width: 278px;
+} */
+.redirection.liste, .espacedroite
+{
+    margin-right: 9px;
+}
+footer
+{
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* Réalisations */
+
+.height
+{
+    height: 235px;
+}
+.left
+{
+    text-align: left;
+}
+.leftc
+{
+    margin-right: auto;
+    margin-left: 0px;
+}
+
+/* Réalisations étudiantes */
+
+/* #un, #quatre, #cinq, .ligne.flex.column
+{
+    margin-left: 50px;
+} */

@@ -1,0 +1,91 @@
+
+
+/* Elements généraux */
+.ligne
+{
+    width: 92%;
+}
+.ligne, #row
+{
+    flex-direction: row !important;
+}
+.valign
+{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.redirection.liste
+{
+    width: 300px;
+}
+.blanc
+{
+    width: 278px;
+}
+.redirection.liste, .espacedroite /* à ne pas supprimer */
+{
+    margin-right: 9px;
+}
+.footer
+{
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* Réalisations */
+.height
+{
+    height: 235px;
+}
+.left
+{
+    text-align: left;
+}
+.leftc
+{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+.text.rea
+{
+    width: 46%;
+    margin-top: 0px;
+}
+
+/* Réalisations étudiantes */
+
+/* #un, #quatre, #cinq, .ligne.flex.column
+{
+    margin-left: 50px;
+} */
+
+/* A propos */
+
+.ligne.flex.column.bloc.a-propos
+{
+    flex-direction: column !important;
+}
+.grid.parcours
+{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.par.logo
+{
+    margin-bottom: 25px;
+}
+.saut
+{
+    margin-bottom: auto;
+}
+.sautdeux
+{
+    margin-bottom: 39px;
+}
+.sautgauche
+{
+    margin-left: 25px;
+}
