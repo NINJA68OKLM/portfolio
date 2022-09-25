@@ -28,10 +28,15 @@
 }
 .footer
 {
-    position: absolute;
-    z-index: 1;
-    bottom: 0px;
-    right: 0px;
+    margin-top: auto;
+}
+.leftt
+{
+    margin-right: auto;
+}
+.rightt
+{
+    margin-left: 3%;
 }
 
 /* Réalisations */
@@ -50,7 +55,6 @@
 }
 .text.rea
 {
-    width: 46%;
     margin-top: 0px;
 }
 
@@ -60,6 +64,35 @@
 {
     margin-left: 50px;
 } */
+.etudiant, pro
+{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Compétences */
+
+.competence.grid
+{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 9px;
+}
+.liste.grid.competence
+{
+    grid-template-columns: 100px 115px;
+    width: 200px;
+}
+.liste.grid.competence>div>h3
+{
+    font-size: 16px;
+}
+.barre
+{
+    width: 50%;
+}
 
 /* A propos */
 
@@ -88,4 +121,13 @@
 .sautgauche
 {
     margin-left: 25px;
+}
+
+/* Lycée Gustave Eiffel */
+
+.grid.gallery.lycee
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 5px;
 }

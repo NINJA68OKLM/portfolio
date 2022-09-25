@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
     <link rel="preload" href="styles/style.css" as="style">
     <link rel="preload" href="styles/style_M.css" as="style" media="screen and (min-width:680px)">
     <link rel="preload" href="styles/style_O.css" as="style" media="screen and (min-width:1200px)">
@@ -14,20 +15,47 @@
     <title>Portolio EKIZ Mustafa</title>
 </head>
 <body>
-    <header class="header header flex column space">
+    <!-- Animation de fond -->
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- Menu -->
+    <header class="flex column space">
         <div class="blocone flex column">
             <div class="partone flex centerc">
-                <img src="img/logo EKIZ Mustafa.png" alt="" class="logo">
+                <img src="img/logo EKIZ Mustafa.png" alt="Logo EKIZ Mustafa" class="logo" loading="lazy">
                 <svg class="header-item" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
             </div>
             <div class="parttwo flex center hide">
                 <div class="sub sub-menu flex column">
                     <a href="index.html">Accueil</a>
                     <a href="a-propos.html">A propos</a>
-                    <a href="realisations.html">Réalisations</a>
+                    <ul class="declencheur">
+                        <a href="realisations.html" class="declencheur">Réalisations +</a>
+                        <ul class="ul-menu hide">
+                            <li>
+                                <a href="etudiant.html">Etudiant</a>
+                            </li>
+                            <li>
+                                <a href="professionnel.html">Professionel</a>
+                            </li>
+                        </ul>
+                        
+                    </ul>
                     <a href="competences.html">Compétences</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="https://fr.linkedin.com/in/mustafa-ekiz-8937a4205" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M22.23 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.2 0 22.23 0zM7.27 20.1H3.65V9.24h3.62V20.1zM5.47 7.76h-.03c-1.22 0-2-.83-2-1.87 0-1.06.8-1.87 2.05-1.87 1.24 0 2 .8 2.02 1.87 0 1.04-.78 1.87-2.05 1.87zM20.34 20.1h-3.63v-5.8c0-1.45-.52-2.45-1.83-2.45-1 0-1.6.67-1.87 1.32-.1.23-.11.55-.11.88v6.05H9.28s.05-9.82 0-10.84h3.63v1.54a3.6 3.6 0 0 1 3.26-1.8c2.39 0 4.18 1.56 4.18 4.89v6.21z"/></svg></a>
+                    <a href="mailto: mustafa.ekiz.2002.tr@gmail.com" target="_blank" rel="noopener">Contact</a>
+                    <a href="https://fr.linkedin.com/in/mustafa-ekiz-8937a4205" target="_blank" rel="noopener"><svg class="linkedin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M22.23 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.2 0 22.23 0zM7.27 20.1H3.65V9.24h3.62V20.1zM5.47 7.76h-.03c-1.22 0-2-.83-2-1.87 0-1.06.8-1.87 2.05-1.87 1.24 0 2 .8 2.02 1.87 0 1.04-.78 1.87-2.05 1.87zM20.34 20.1h-3.63v-5.8c0-1.45-.52-2.45-1.83-2.45-1 0-1.6.67-1.87 1.32-.1.23-.11.55-.11.88v6.05H9.28s.05-9.82 0-10.84h3.63v1.54a3.6 3.6 0 0 1 3.26-1.8c2.39 0 4.18 1.56 4.18 4.89v6.21z"/></svg></a>
                 </div>
             </div>
         </div>
@@ -38,22 +66,21 @@
     <main class="flex center column centerc">
         <h1>BIENVENUE SUR MON SITE</h1>
         <div class="flex column ligne">
-            <div class="bloc">
-                <img src="img/undraw/undraw_Hello_re_3evm.png" alt="" srcset="">
+            <div class="bloc valign" tempp-id="500" temp-id="0.5">
+                <img src="img/undraw/undraw_Hello_re_3evm.png" alt="" srcset="" pour-id="48.007" class="img">
             </div>
-            <div class="bloc">
-                <p class="valign">Je suis apprenti développeur web au sein de l’agence Cactus à Ruelisheim, et j’étudie actuellement en Licence professionnelle - Web design et développement à l’IUT de Mulhouse.
-                    <br> <br>
-                    J’aime le dévellopement web, j’ai des compétences en Front-end comme en Back-end, même si je suis plus à l’aise en Back-end.</p>
+            <div class="flex column bloc granditem" tempp-id="1000" temp-id="1">
+                <p>Je suis apprenti développeur web au sein de l’agence Cactus à Ruelisheim, et j’étudie actuellement en Licence professionnelle - Web design et développement à l’IUT de Mulhouse.</p>
+                <p>J’aime le dévellopement web, j’ai des compétences en Front-end comme en Back-end, même si je suis plus à l’aise en Back-end.</p>
             </div>
-            <div class="bloc">
-                <img src="/img/undraw/undraw_Programming_re_kg9v.png" alt="" srcset="">
+            <div class="bloc valign" tempp-id="1500" temp-id="1.5">
+                <img src="img/undraw/undraw_Programming_re_kg9v.png" alt="" srcset="" pour-id="71.29" class="img">
             </div>
         </div>
         <div class="flex column ligne">
             <div class="grandbloc">
-                <h2>Apprenez à me connaitre</h2>
-                <div class="bloc redirection flex column">
+                <h2 tempp-id="2000" temp-id="2">Apprenez à me connaitre</h2>
+                <div class="bloc redirection flex column"  tempp-id="2500" temp-id="2.5">
                     <img src="img/undraw/undraw_Everywhere_together_re_xe5a.png" alt="">
                     <p>Découvrez mon parcours et mes passions !</p>
                     <button class="button">
@@ -62,8 +89,8 @@
                 </div>
             </div>
             <div class="grandbloc">
-                <h2>Mes réalisations</h2>
-                <div class="bloc redirection flex column">
+                <h2 tempp-id="3000" temp-id="3">Mes réalisations</h2>
+                <div class="bloc redirection flex column"  tempp-id="3500" temp-id="3.5">
                     <img src="img/undraw/undraw_Completed_re_cisp.png" alt="">
                     <p>Différents projets réalisés</p>
                     <button class="button">
@@ -72,18 +99,18 @@
                 </div>
             </div>
             <div class="grandbloc">
-                <h2>Mes compétences</h2>
-                <div class="bloc redirection flex column">
+                <h2 tempp-id="4000" temp-id="4.5">Mes compétences</h2>
+                <div class="bloc redirection flex column"  tempp-id="5000" temp-id="5">
                     <img src="img/undraw/undraw_Percentages_re_a1ao.png" alt="">
                     <p>Les compétences nécessaires à mes projets</p>
                     <button class="button">
-                        <a href="a-propos.html">Compétences</a>
+                        <a href="competences.html">Compétences</a>
                     </button>
                 </div>
             </div>
         </div>
         <footer>© Mustafa EKIZ</footer>
     </main>
-    <script src="js/script.js"></script>
+    <script defer src="js/script.js"></script>
 </body>
 </html>

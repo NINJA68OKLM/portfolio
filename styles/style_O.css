@@ -1,4 +1,7 @@
-
+.area
+{
+    top: 0px;
+}
 
 
 /* Portfolio V2 */
@@ -8,7 +11,7 @@
     padding: 10px 0px;
     text-align: center;
 }
-.header.header
+header
 {
     position: fixed;
     z-index: 2;
@@ -40,6 +43,7 @@
 main
 {
     transform: translate(205px);
+    top: 0px;
 }
 h1
 {
@@ -56,21 +60,25 @@ h2
 }
 .bloc>p
 {
-    text-align: center;
+    text-align: left;
+}
+.ligne, #row
+{
+    flex-direction: row !important;
 }
 .valign
 {
     margin-top: auto;
     margin-bottom: auto;
 }
-/* .redirection.liste
+.redirection.liste
 {
     width: 300px;
 }
 .blanc
 {
     width: 278px;
-} */
+}
 .redirection.liste, .espacedroite
 {
     margin-right: 9px;
@@ -79,6 +87,39 @@ footer
 {
     text-align: center;
     margin-top: 25px;
+}
+.rightt
+{
+    margin-left: 35%;
+}
+
+/* A propos */
+
+.ligne.flex.column.bloc.a-propos
+{
+    flex-direction: column !important;
+}
+.grid.parcours
+{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.par.logo
+{
+    margin-bottom: 25px;
+}
+.saut
+{
+    margin-bottom: auto;
+}
+.sautdeux
+{
+    margin-bottom: 39px;
+}
+.sautgauche
+{
+    margin-left: 25px;
 }
 
 /* Réalisations */
@@ -97,9 +138,75 @@ footer
     margin-left: 0px;
 }
 
+/* Réalisations */
+
+
+
 /* Réalisations étudiantes */
 
 /* #un, #quatre, #cinq, .ligne.flex.column
 {
     margin-left: 50px;
 } */
+.etudiant
+{
+    grid-template-columns: 300px 300px 300px;
+}
+
+/* Réalisations pro */
+
+.redirection.pro
+{
+    width: 269px;
+}
+.redirection.pro>.blanc
+{
+    width: 242px;
+}
+
+/* Lycée Gustave Eiffel */
+
+.grid.gallery.lycee
+{
+    grid-template-columns: 162.5px 162.5px 162.5px 162.5px 162.5px 162.5px;
+    gap: 5px;
+    margin: 15px;
+}
+.grid.gallery.lycee>img
+{
+    grid-column: span 2;
+}
+.except
+{
+    grid-column: span 3 !important;
+}
+.ro
+{
+    margin: 0px 6%;
+}
+
+/* Registre des cancers du Haut-Rhin */
+
+.roro
+{
+    margin: 10px 3%;
+}
+
+/* Compétences */
+
+.competence.grid
+{
+    grid-template-columns: 269px 269px 269px;
+}
+.liste.competence.grid
+{
+    width: 269px;
+}
+.liste.grid.competence
+{
+    grid-template-columns: 100px 115px;
+}
+.barre
+{
+    width: 90%;
+}
