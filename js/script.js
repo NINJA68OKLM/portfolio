@@ -5,6 +5,9 @@ function submenu(){
     document.querySelector(".partthree").classList.toggle("hide");
 
 }
+// Hauteur totale
+var totalheight = (screen.height)-(window.innerHeight);
+console.log(totalheight);
 // Menu
 if (window.matchMedia("(min-width: 1200px)").matches) {
     
@@ -12,12 +15,15 @@ if (window.matchMedia("(min-width: 1200px)").matches) {
         e.classList.toggle("hide");
     });
     console.log(screen.width);
-    document.querySelector("main").style.width= (screen.width)-222+"px";
+    document.querySelector("main").style.width= (screen.width)-220+"px";
     var footerwidth = document.querySelector("footer").style.width;
     // Pied de page
     console.log(screen.height);
     var main = document.querySelector("main");
-    if (main.offsetWidth < screen.height) {
+    console.log("jjjj");
+    console.log(main.off)
+    if (main.offsetHeight < screen.height) {
+        console.log("fffff");
         main.style.height = screen.height+"px";
     }
     // Menu sous-menus
@@ -45,7 +51,7 @@ if (window.matchMedia("(min-width: 680px)").matches) {
             fullscreen.style.width= document.querySelector("main").style.width;
             fullscreen.style.height= "100vh";
             fullscreen.innerHTML= `<svg style='margin-left: auto; margin-right: 10px;' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-                                <img style='margin-top: 10px;' src='${e.getAttribute("src")}' alt='${e.getAttribute("alt")}' width='90%'>`;
+                                <img style='margin-top: 10px;' src='${e.getAttribute("src")}' alt='${e.getAttribute("alt")}' width='90%' alt='${e.getAttribute("alt")}' loading='lazy'>`;
             fullscreen.style.position= "fixed";
             fullscreen.style.top= "0px";
             fullscreen.style.right= "0px";
@@ -102,3 +108,5 @@ elements.forEach(e => {
 
 // Animation de fond
 document.querySelector(".area").style.height= document.querySelector("main").offsetHeight+"px";
+console.log(window.innerHeight);
+console.log(screen.height)
