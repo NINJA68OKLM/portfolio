@@ -386,6 +386,7 @@ footer>a
 .bloc>img
 {
     width: 100%;
+    height: auto;
 }
 
 /* A propos */
@@ -394,7 +395,6 @@ footer>a
 {
     width: 98%;
     display: grid;
-    /* grid-template-columns: 24.55% auto 60.47%; */
     grid-template-columns: 92px 15px 155px;
     gap: 3.5px;
 }
