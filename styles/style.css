@@ -1,6 +1,40 @@
-
-
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+/* Couleurs de police et de fond */
+
+a, header, .granditem, .titre, .description>p
+{
+    color: #FFFFFF;
+}
+header, button.button
+{
+    background: #000000;
+}
+
+/* Paddings */
+
+header, .titre, footer
+{
+    padding: 15px;
+}
+.sub.sub-menu>a, ul.declencheur
+{
+    padding: 10px 0px;
+}
+
+/* Positions */
+
+main, .ul-menu, .area, .circles, .circles li
+{
+    position: absolute;
+}
+
+/* Transitions d'animations */
+
+a, .hide, .bloc, h2
+{
+    transition: 0.4s;
+}
 
 body
 {
@@ -10,24 +44,18 @@ body
 a
 {
     text-decoration: none;
-    color: #FFFFFF;
-    transition: 0.4s;
 }
 
 .area{
-    position: absolute;
     top: 85px;
     background: #FFFFFF;  
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     width: 100%;
     height:100vh;
-    
-   
 }
 
 .circles{
     margin: 0px;
-    position: absolute;
     top: 0;
     left: 0;
     width: 92%;
@@ -35,7 +63,6 @@ a
     overflow: hidden;
 }
 .circles li{
-    position: absolute;
     display: block;
     list-style: none;
     width: 20px;
@@ -46,6 +73,14 @@ a
     
 }
 
+.circles li:nth-child(2), .circles li:nth-child(3), .circles li:nth-child(5){
+    width: 20px;
+    height: 20px;
+}
+.circles li:nth-child(7), .circles li:nth-child(10){
+    width: 150px;
+    height: 150px;
+}
 .circles li:nth-child(1){
     left: 25%;
     width: 80px;
@@ -54,16 +89,12 @@ a
 }
 .circles li:nth-child(2){
     left: 10%;
-    width: 20px;
-    height: 20px;
     animation-delay: 2s;
     animation-duration: 12s;
 }
 
 .circles li:nth-child(3){
     left: 70%;
-    width: 20px;
-    height: 20px;
     animation-delay: 4s;
 }
 
@@ -77,8 +108,6 @@ a
 
 .circles li:nth-child(5){
     left: 65%;
-    width: 20px;
-    height: 20px;
     animation-delay: 0s;
 }
 
@@ -91,8 +120,6 @@ a
 
 .circles li:nth-child(7){
     left: 35%;
-    width: 150px;
-    height: 150px;
     animation-delay: 7s;
 }
 
@@ -114,17 +141,14 @@ a
 
 .circles li:nth-child(10){
     left: 85%;
-    width: 150px;
-    height: 150px;
     animation-delay: 0s;
     animation-duration: 11s;
 }
 
-/* Portfolio V2  */
 /* Généraux */
+
 main
 {
-    position: absolute;
     top: 85px;
 }
 .flex
@@ -161,21 +185,13 @@ main
     align-content: space-between;
 }
 /* Header*/
-/* .sub.sub-menu
-{
-    transform: translate(0px, 40px);
-} */
+
 .sub.sub-menu>a
 {
-    padding: 10px 0px;
     text-align: center;
 }
 header
 {
-    background: #000000;
-    color: #FFFFFF;
-    padding: 15px;
-
     align-items: center;
 }
 .blocone
@@ -207,13 +223,11 @@ a:hover, li:hover
 ul.declencheur
 {
     margin: 0px;
-    padding: 10px 0px;
 }
 .ul-menu
 {
     display: flex;
     flex-direction: column;
-    position: absolute;
     left: 202px;
     background: black;
     padding: 10px 15px 10px 65px;
@@ -229,7 +243,6 @@ ul.declencheur
 .hide
 {
     display: none;
-    transition: 0.4s;
 }
 
 /* Page d'accueil */
@@ -238,7 +251,6 @@ ul.declencheur
 {
     display: flex;
     justify-content: center;
-    transition: 0.4s;
 }
 
 /* Elements généraux */
@@ -258,25 +270,21 @@ h1
 h2
 {
     font-size: 20px;
-    transition: 0.4s;
 }
 .granditem
 {
     margin-top: 10px;
     background: rgb(208, 57, 57, 0.66);
-    color: #FFFFFF;
     border-radius: 25px;
-    /* color: #FFFFFF; */
 }
 .bloc>p
 {
     font-size: 16px;
     text-align: justify;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 20px 0px 20px;
 }
 button.button
 {
-    background: #000000;
     border: transparent solid 1px;
     border-radius: 25px;
     width: 95px;
@@ -304,11 +312,6 @@ button.button
     margin-top: 10px;
     width: 214px;
     height: 125px;
-}
-.titre
-{
-    color: #FFFFFF;
-    padding: 15px;
 }
 .liste.grid.competence
 {
@@ -368,7 +371,6 @@ footer
     width: 100%;
     text-align: center;
     margin-top: 10px;
-    padding: 15px 0px;
 }
 footer>p
 {
@@ -414,7 +416,6 @@ footer>a
 {
     font-size: 12px;
     line-height: 20px;
-    color: #FFFFFF;
     text-align: center;
 }
 .rond
@@ -470,17 +471,14 @@ footer>a
     }
 }
 @keyframes animate {
-
     0%{
         transform: translateY(0) rotate(0deg);
         opacity: 1;
         border-radius: 0;
     }
-
     100%{
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
     }
-
 }
