@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+/* Couleurs de police et de fond */
+
+a, header, .granditem, .titre, .description>p
+{
+    color: #FFFFFF;
+}
+header, button.button
+{
+    background: #000000;
+}
+
+/* Paddings */
+
+header, .titre, footer
+{
+    padding: 15px;
+}
+footer
+{
+    padding: 15px 0px;
+}
+.sub.sub-menu>a, ul.declencheur
+{
+    padding: 10px 0px;
+}
+.cv
+{
+    padding: 10px 15px;
+}
+
+/* Positions */
+
+main, .ul-menu, .area, .circles, .circles li
+{
+    position: absolute;
+}
+
+/* Transitions d'animations */
+
+a, .hide, .bloc, h2
+{
+    transition: 0.4s;
+}
+
+body
+{
+    margin: 0px;
+    font-family: 'Exo', sans-serif;
+}
+a
+{
+    text-decoration: none;
+}
+.area{
+    top: 85px;
+    background: #FFFFFF;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height:100vh;
+}
+
+.circles{
+    margin: 0px;
+    top: 0;
+    left: 0;
+    width: 92%;
+    height: 100%;
+    overflow: hidden;
+}
+.circles li{
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: gray;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(2), .circles li:nth-child(3), .circles li:nth-child(5){
+    width: 20px;
+    height: 20px;
+}
+.circles li:nth-child(7), .circles li:nth-child(10){
+    width: 150px;
+    height: 150px;
+}
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+.circles li:nth-child(2){
+    left: 10%;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+/* Généraux */
+
+main
+{
+    top: 85px;
+    width: 100%;
+}
+.flex
+{
+    display: flex;
+}
+.column
+{
+    flex-direction: column;
+}
+.row
+{
+    flex-direction: row;
+}
+.center
+{
+    justify-content: center;
+}
+.centerc
+{
+    align-items: center;
+}
+.halign
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+.space
+{
+    justify-content: space-between;
+}
+.spacec
+{
+    align-content: space-between;
+}
+
+/* Header*/
+
+.sub.sub-menu>a
+{
+    text-align: center;
+}
+header
+{
+    align-items: center;
+}
+.blocone
+{
+    width: 100%;
+}
+.partone
+{
+    width: 100%;
+    justify-content: space-between;
+}
+.parttwo
+{
+    margin-top: 10px;
+}
+.partthree
+{
+    margin: 35px 0px 10px 0px;
+}
+a:hover, li:hover
+{
+    font-weight: bold;
+    color: #D03939;
+}
+.linkedin:hover
+{
+    fill: #D03939;
+}
+ul.declencheur
+{
+    margin: 0px;
+}
+.ul-menu
+{
+    display: flex;
+    flex-direction: column;
+    left: 202px;
+    background: black;
+    padding: 10px 15px 10px 65px;
+    transform: translate(-45px, -38px);
+}
+.ul-menu>li
+{
+    display: flex;
+    padding: 7.5px 0px;
+}
+.cv
+{
+    background: yellow;
+    color: #000000;
+    border-radius: 25px;
+}
+
+/* Eléments cachés */
+
+.hide
+{
+    display: none;
+}
+
+/* Page d'accueil */
+
+.bloc
+{
+    display: flex;
+    justify-content: center;
+}
+
+/* Elements généraux */
+
+h1, h2, h3
+{
+    text-align: center;
+}
+h1
+{
+    font-size: 22px;
+}
+.h1
+{
+    margin-bottom: 0px;
+}
+h2
+{
+    font-size: 20px;
+}
+.granditem
+{
+    margin-top: 10px;
+    background: rgb(208, 57, 57, 0.66);
+    border-radius: 25px;
+}
+.bloc>p, .flex.column>p
+{
+    font-size: 16px;
+    text-align: justify;
+    padding: 0px 20px 0px 20px;
+}
+button.button
+{
+    border: transparent solid 1px;
+    border-radius: 25px;
+    width: 95px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ligne
+{
+    width: 100%;
+}
+.redirection.liste
+{
+    background: black;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: auto auto;
+    width: 240px;
+    margin-bottom: 10px;
+}
+.blanc
+{
+    background: white;
+    border-radius: 17px;
+    margin-top: 10px;
+    width: 214px;
+    height: 125px;
+}
+.liste.grid.competence
+{
+    display: grid;
+    grid-template-columns: 100px 200px;
+    border-radius: 15px;
+    width: 255px;
+    background: black;
+    color: white;
+    margin-bottom: 15px;
+    justify-content: initial;
+}
+.liste.grid.competence>img
+{
+    width: 60px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.liste.grid.competence>div
+{
+    display: grid;
+    grid-template-rows: 75px 50px;
+}
+.liste.grid.competence>div>h3
+{
+    text-align: left;
+    margin-top: 35px;
+}
+.barre
+{
+    overflow: hidden;
+    background: #D6D6D6;
+    border-radius: 10px;
+    width: 70%;
+    height: 25px;
+}
+.progress
+{
+    background: green;
+    height: 25px;
+}
+.leftt
+{
+    margin-right: auto;
+}
+.middle
+{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+footer
+{
+    background: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+footer>p
+{
+    margin: 0px 5px 0px 0px;
+}
+footer>a
+{
+    margin: 0px 0px 0px 5px;
+}
+
+/* Page d'accueil */
+
+.bloc>img, .grandbloc.ligne.flex.column>img
+{
+    width: 100%;
+    height: auto;
+}
+
+/* A propos */
+
+.grid.parcours
+{
+    width: 98%;
+    display: grid;
+    grid-template-columns: 92px 15px 155px;
+    gap: 3.5px;
+}
+.par.logo
+{
+    width: 92px;
+    height: 92px;
+    background: #D03939;
+    border-radius: 50%;
+}
+.description
+{
+    background: #D03939;
+    max-height: 92px;
+    max-width: 155px;
+    border-radius: 20px;
+}
+.description>p
+{
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+.rond
+{
+    background: blue;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.fond.deux
+{
+    width: 85px !important;
+    height: 85px !important;
+    border-radius: 50%;
+    background: white;
+    transform: translate(0px, 2.5px);
+}
+
+/* Réalisations pro */
+
+.redirection.pro
+{
+    width: 255px;
+}
+/* .redirection.pro>.blanc
+{
+    width: 227px;
+} */
+
+/* Lycée Gustave Eiffel */
+
+.grid.gallery.lycee
+{
+    margin: 10px;
+}
+.grid.gallery.lycee>img
+{
+    width: 100%;
+}
+
+/* Etudiant */
+
+.etudiant>.iframe
+{
+    margin-bottom: 10px;
+}
+.etudiant>img
+{
+    max-width: 300px;
+}
+
+/* Animation */
+
+.bloc, h2
+{
+    opacity: 0;
+}
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
