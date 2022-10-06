@@ -60,16 +60,20 @@
 
 /* Réalisations étudiantes */
 
-/* #un, #quatre, #cinq, .ligne.flex.column
-{
-    margin-left: 50px;
-} */
 .etudiant, pro
 {
     display: grid;
     grid-template-columns: 300px 300px;
     gap: 15px;
     justify-content: center;
+}
+.etudiant>.iframe
+{
+    margin-bottom: 0px;
+}
+.etudiant>img
+{
+    max-height: 169px;
 }
 
 /* Compétences */

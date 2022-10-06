@@ -13,6 +13,7 @@
 }
 header
 {
+    display: inline-flex;
     position: fixed;
     z-index: 2;
     top: 0px;
@@ -61,6 +62,14 @@ h2
 .bloc>p
 {
     text-align: left;
+}
+.home .flex.column>p
+{
+    padding: 0px 15px;
+}
+.flex.column>p
+{
+    padding: 0px;
 }
 .ligne, #row
 {
