@@ -468,6 +468,7 @@ footer>a
 .grid.gallery.lycee>img
 {
     width: 100%;
+    height: auto;
 }
 
 /* Etudiant */
