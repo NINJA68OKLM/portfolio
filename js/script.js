@@ -90,7 +90,7 @@ var tab = lien.split("/");
 var logos = document.querySelectorAll(".blanc, .fond.deux");
 logos.forEach(e => {
     var Idd = e.parentNode.getAttribute("id");
-    if (tab.length == 10)
+    if (tab.length == 6)
     {
         e.style.backgroundImage= "url('../img/"+Idd+"')";
     }
@@ -102,7 +102,7 @@ logos.forEach(e => {
     e.style.backgroundRepeat= "no-repeat";
     e.style.backgroundPosition= "center center";
 });
-console.log(tab);
+console.log(tab.length);
 console.log(window.location.href);
 // Compétences
 var progress = document.querySelectorAll(".progress");
