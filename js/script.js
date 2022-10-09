@@ -1,6 +1,7 @@
 // Portfolio V2
 document.querySelector(".partone>svg").addEventListener("click", submenu);
 function submenu(){
+    console.log("jjjjjjeezd");
     document.querySelector(".parttwo").classList.toggle("hide");
     document.querySelector(".partthree").classList.toggle("hide");
 
@@ -9,15 +10,18 @@ function submenu(){
 var totalheight = (screen.height)-(window.innerHeight);
 console.log(totalheight);
 // Menu
+if (window.matchMedia("(max-width: 1200px)").matches) {
+    document.querySelector("body").style.height= "99vh";
+}
 if (window.matchMedia("(min-width: 1200px)").matches) {
     
     document.querySelectorAll(".hide").forEach(e => {
         e.classList.toggle("hide");
     });
     console.log(screen.width);
-    document.querySelector("main").style.width= (screen.width)-220+"px";
+    document.querySelector("main").style.width= (screen.width)-222+"px";
     var footerwidth = document.querySelector("footer").style.width;
-    // Pied de page
+    // Position du pied de page
     console.log(screen.height);
     var main = document.querySelector("main");
     console.log("jjjj");
@@ -43,7 +47,7 @@ if (window.matchMedia("(min-width: 680px)").matches) {
     });
 
     // Gallerie
-    var galleryimage = document.querySelectorAll(".grid.gallery.lycee>img");
+    var galleryimage = document.querySelectorAll(".grid.gallery.lycee>img, .etudiant>img");
     galleryimage.forEach(e=> {
         e.addEventListener("click", function(){
             var fullscreen = document.createElement("div");
