@@ -71,6 +71,7 @@ if (window.matchMedia("(min-width: 680px)").matches) {
             fullscreen.classList.add("fullscreen");
             
             fullscreen.style.width= document.querySelector("main").style.width;
+            fullscreen.style.width= "80%";
             fullscreen.style.height= "100vh";
             fullscreen.innerHTML= `<svg style='margin-left: auto; margin-right: 10px;' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                                 <img style='margin-top: 10px;' src='${e.getAttribute("src")}' alt='${e.getAttribute("alt")}' width='90%' alt='${e.getAttribute("alt")}' loading='lazy'>`;
@@ -81,7 +82,8 @@ if (window.matchMedia("(min-width: 680px)").matches) {
             fullscreen.style.flexDirection= "column";
             fullscreen.style.alignItems= "center";
             fullscreen.style.background= "#000000";
-            fullscreen.style.padding= "10px";
+            fullscreen.style.padding= "10px 10px 10px 175px";
+            fullscreen.style.boxSizing= "border-box";
             
             document.querySelector("body").appendChild(fullscreen);
             // Fermer le plein écran
