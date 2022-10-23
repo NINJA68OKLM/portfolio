@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE html prefix="og: http://ogp.me/ns#">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Les projets que j'ai réalisé en tant qu'étudiant">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="manifest" href="manifest.json">
     <link rel="preload" href="styles/style.css" as="style">
@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/style_M.css" media="screen and (min-width:680px)">
     <link rel="stylesheet" href="styles/style_O.css" media="screen and (min-width:1200px)">
+    <meta property="og:title" content="Portolio EKIZ Mustafa : Etudiant" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/logo EKIZ Mustafa.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,200&display=swap" rel="stylesheet"> 
@@ -44,10 +47,10 @@
                     <a href="index.html">Accueil</a>
                     <a href="a-propos.html">A propos</a>
                     <ul class="declencheur">
-                        <a href="realisations.html" class="declencheur">Réalisations +</a>
+                        <a href="realisations.html" class="declencheur" style="color: #D03939 !important; font-weight: bolder;">Réalisations +</a>
                         <ul class="ul-menu hide">
                             <li>
-                                <a href="etudiant.html">Etudiant</a>
+                                <a href="etudiant.html" style="color: #D03939 !important; font-weight: bolder;">Etudiant</a>
                             </li>
                             <li>
                                 <a href="professionnel.html">Professionel</a>
@@ -68,32 +71,59 @@
     <main class="flex column centerc">
         <h1>ETUDIANT</h1>
         <h2>Sites web</h2>
+        <p>Ces sites web ont étés réalisés pendant les projets tutorés au cours de ma deuxième année de DUT - MMI.</p>
         <div class="ligne flex column centerc etudiant">
-            <a href="https://ninja68oklm.github.io/do-it/" target="_blank" rel="noopener" class="espacedroite" id="un">
-                <div class="bloc redirection liste halign" id="logos/do it.png" tempp-id="500" temp-id="0.5">
-                    <div class="blanc"></div>
-                    <div class="titre">Do It</div>
-                </div>
-            </a>
-            <a href="https://ninja68oklm.github.io/.orangutans/" target="_blank" rel="noopener" class="espacedroite">
-                <div class="bloc redirection liste halign" id="logos/orangutans equality.png" tempp-id="1000" temp-id="1">
-                    <div class="blanc"></div>
-                    <div class="titre">Orangutans Equality</div>
-                </div>
-            </a>
-            <a href="" target="_blank" rel="noopener" class="espacedroite">
-                <div class="bloc redirection liste halign" tempp-id="1500" temp-id="1.5">
-                    <div class="blanc"></div>
-                    <div class="titre">Volt</div>
-                </div>
-            </a>
+            <div>
+                <a href="https://ninja68oklm.github.io/do-it/" target="_blank" rel="noopener" class="espacedroite" id="un">
+                    <div class="bloc redirection liste halign" id="logos/do it.png" tempp-id="500" temp-id="0.5">
+                        <div class="blanc"></div>
+                        <div class="titre">Do It</div>
+                    </div>
+                    
+                </a>
+                <button class="info" id="do-it">Info</button>
+            </div>
+            <div>
+                <a href="https://ninja68oklm.github.io/.orangutans/" target="_blank" rel="noopener" class="espacedroite">
+                    <div class="bloc redirection liste halign" id="logos/orangutans equality.png" tempp-id="1000" temp-id="1">
+                        <div class="blanc"></div>
+                        <div class="titre">Orangutans Equality</div>
+                    </div>
+                </a>
+                <button class="info" id="do-it">Info</button>
+            </div>
+            <div>
+                <a href="" target="_blank" rel="noopener" class="espacedroite">
+                    <div class="bloc redirection liste halign" tempp-id="1500" temp-id="1.5">
+                        <div class="blanc"></div>
+                        <div class="titre">Volt</div>
+                    </div>
+                </a>
+                <button class="info" id="do-it">Info</button>
+            </div>
         </div>
         <h2>Infographie/Multimédia</h2>
         <div class="ligne flex column centerc etudiant">
-            <iframe class="iframe espacedroite bloc" id="cinq" width="300" height="169" src="https://www.youtube.com/embed/2-TNBz87Hvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tempp-id="2000" temp-id="2"></iframe>
-            <iframe class="iframe bloc" width="301" height="169" src="https://www.youtube.com/embed/ShrpiP--yF0" title="PIC VERT EKIZ Mustafa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tempp-id="2500" temp-id="2.5"></iframe>
-            <iframe class="bloc" width="300" height="169" src="https://www.youtube.com/embed/xjHEiI-YMgo" title="Rendu 3D EKIZ Mustafa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tempp-id="3500" temp-id="3"></iframe>
-            <img class="bloc" src="img/EKIZ_Portrait_masque.jpg" alt="Noé Zimmermann - EKIZ Mustafa" loading="lazy" srcset="" tempp-id="4000" temp-id="4">
+            <div>
+                <iframe class="iframe espacedroite bloc" id="cinq" width="300" height="169" src="https://www.youtube.com/embed/2-TNBz87Hvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tempp-id="2000" temp-id="2"></iframe> <br>
+                <button class="info" id="do-it">Info</button>
+            </div>
+            <div>
+                <iframe class="iframe bloc" width="301" height="169" src="https://www.youtube.com/embed/ShrpiP--yF0" title="PIC VERT EKIZ Mustafa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tempp-id="2500" temp-id="2.5"></iframe>
+                <button class="info" id="do-it">Info</button>
+            </div>
+            <div>
+                <iframe class="iframe bloc" width="300" height="169" src="https://www.youtube.com/embed/xjHEiI-YMgo" title="Rendu 3D EKIZ Mustafa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tempp-id="3500" temp-id="3"></iframe>
+                <button class="info" id="do-it">Info</button>
+            </div>
+            <div>
+                <img class="iframe bloc" src="img/EKIZ_Portrait_masque.jpg" alt="Noé Zimmermann - EKIZ Mustafa" loading="lazy" srcset="" tempp-id="4000" temp-id="4">
+                <button class="info" id="do-it">Info</button>
+            </div>
+
+            
+            
+            
         </div>
         <h2>Maquettes</h2>
         <div class="ligne flex column centerc etudiant">
@@ -102,9 +132,13 @@
                     <div class="blanc"></div>
                     <div class="titre">Refonte Skillet</div>
                 </div>
+                <button class="info" id="do-it">Info</button>
             </a>
         </div>
-        <footer>© Mustafa EKIZ</footer>
+        <footer class="flex space">
+            <a href="mentions-legales.html">Mentions légales</a>
+            <p>© Mustafa EKIZ</p>
+        </footer>
     </main>
     <script defer src="js/script.js"></script>
 </body>
