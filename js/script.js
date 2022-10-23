@@ -83,7 +83,7 @@ if (window.matchMedia("(min-width: 680px)").matches) {
             fullscreen.style.alignItems= "center";
             fullscreen.style.background= "#000000";
             fullscreen.style.padding= "10px 10px 10px 175px";
-            fullscreen.style.boxSizing= "border-box";
+            // fullscreen.style.boxSizing= "border-box";
             
             document.querySelector("body").appendChild(fullscreen);
             // Fermer le plein écran
