@@ -43,10 +43,10 @@ header
 {
     margin-top: 20px;
 }
-.partthree
+/* .partthree
 {
     transform: translate(0px, -55px);
-}
+} */
 
 /* Elements généraux */
 
@@ -204,6 +204,10 @@ footer
 {
     margin: 0px 6%;
 }
+/* .fullscreen
+{
+    box-sizing: border-box;
+} */
 
 /* Registre des cancers du Haut-Rhin */
 
