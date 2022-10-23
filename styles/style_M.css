@@ -1,4 +1,7 @@
-
+.circles
+{
+    width: 93%;
+}
 
 /* Elements généraux */
 .ligne
@@ -67,11 +70,11 @@
     gap: 15px;
     justify-content: center;
 }
-.etudiant>.iframe
+/* .etudiant>div>.iframe
 {
     margin-bottom: 0px;
-}
-.etudiant>img
+} */
+.etudiant>div>img
 {
     max-height: 169px;
 }
@@ -80,7 +83,7 @@
 
 .competence.grid
 {
-    display: grid;
+    display: grid !important;
     grid-template-columns: 200px 200px 200px;
     gap: 9px;
 }

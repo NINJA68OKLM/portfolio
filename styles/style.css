@@ -28,6 +28,12 @@ footer
     padding: 10px 15px;
 }
 
+/* Header */
+header
+{
+    box-sizing: border-box;
+}
+
 /* Positions */
 
 main, .ul-menu, .area, .circles, .circles li
@@ -63,7 +69,7 @@ a
     margin: 0px;
     top: 0;
     left: 0;
-    width: 92%;
+    width: 87%;
     height: 100%;
     overflow: hidden;
 }
@@ -155,6 +161,7 @@ a
 main
 {
     top: 85px;
+    box-sizing: border-box;
     width: 100%;
 }
 .flex
@@ -238,7 +245,7 @@ ul.declencheur
     left: 202px;
     background: black;
     padding: 10px 15px 10px 65px;
-    transform: translate(-45px, -38px);
+    transform: translate(-65px, -38px);
 }
 .ul-menu>li
 {
@@ -473,13 +480,19 @@ footer>a
 
 /* Etudiant */
 
-.etudiant>.iframe
+.etudiant>div>.iframe, .info
 {
     margin-bottom: 10px;
 }
-.etudiant>img
+.etudiant>div>img
 {
     max-width: 300px;
+}
+
+/* Compétences */
+.competence.grid.centerc.bloc
+{
+    display: initial;
 }
 
 /* Animation */
@@ -487,6 +500,10 @@ footer>a
 .bloc, h2
 {
     opacity: 0;
+}
+.top
+{
+    top: 349px;
 }
 @keyframes appear {
     0%{
