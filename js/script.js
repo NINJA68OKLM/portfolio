@@ -109,7 +109,7 @@ var tab = lien.split("/");
 var logos = document.querySelectorAll(".blanc, .fond.deux");
 logos.forEach(e => {
     var Idd = e.parentNode.getAttribute("id");
-    if (tab.length == 3)
+    if (tab.length == 5)
     {
         e.style.backgroundImage= "url('../img/"+Idd+"')";
     }
