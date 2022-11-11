@@ -1,3 +1,10 @@
+/* Taille des zones */
+
+/* .area, main
+{
+    height: 100%;
+} */
+
 /* Couleurs de police et de fond */
 
 a, header, .granditem, .titre, .description>p
@@ -487,6 +494,15 @@ footer>a
 .etudiant>div>img
 {
     max-width: 300px;
+}
+#info
+{
+    padding: 15px;
+    background: #000000;
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    top: 0;
 }
 
 /* Compétences */

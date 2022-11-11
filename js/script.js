@@ -1,7 +1,6 @@
 // Menu clic
 document.querySelector(".partone>svg").addEventListener("click", submenu);
 function submenu(){
-    console.log("jjjjjjeezd");
     document.querySelector(".area").classList.toggle("top");
     document.querySelector("main").classList.toggle("top");
     document.querySelector(".parttwo").classList.toggle("hide");
@@ -10,7 +9,6 @@ function submenu(){
 document.querySelector(".area");
 // Hauteur totale
 var totalheight = (screen.height)-(window.innerHeight);
-console.log(totalheight);
 // Style menu
 if (window.matchMedia("(max-width: 1200px)").matches) {
     document.querySelector("body").style.height= "99vh";
@@ -25,7 +23,6 @@ if (window.matchMedia("(min-width: 1200px)").matches) {
     document.querySelectorAll(".hide").forEach(e => {
         e.classList.toggle("hide");
     });
-    console.log(screen.width);
     // Définition et actualisation de la largeur du main
     // setInterval(() => {
     //     document.querySelector("main").style.width= (window.innerWidth)-175+"px";
@@ -33,19 +30,23 @@ if (window.matchMedia("(min-width: 1200px)").matches) {
     
     var footerwidth = document.querySelector("footer").style.width;
     // Position du pied de page
-    console.log(screen.height);
+    console.log("Taille de l'écran :"+screen.height);
     var main = document.querySelector("main");
-    console.log("jjjj");
     console.log(main.off)
     if (main.offsetHeight < screen.height) {
-        console.log("fffff");
         main.style.height = screen.height+"px";
         setInterval(() => {
             // document.querySelector("main").style.width= (window.innerWidth)-175+"px";
             // document.querySelector(".area").style.height= screen.height+"px";
             // document.querySelector(".area").style.width= window.innerWidth+"px";
         }, 100);
+        console.log("Hauteur de la main : "+main.offsetHeight);
+        document.querySelector("footer").style.marginTop= "auto";
         
+    }
+    else
+    {
+        document.querySelector("footer").style.marginTop= "25px";
     }
     // Menu sous-menus
     document.querySelector(".ul-menu").classList.add("hide");
@@ -71,7 +72,7 @@ if (window.matchMedia("(min-width: 680px)").matches) {
             fullscreen.classList.add("fullscreen");
             
             fullscreen.style.width= document.querySelector("main").style.width;
-            fullscreen.style.width= "80%";
+            fullscreen.style.width= "90%";
             fullscreen.style.height= "100vh";
             fullscreen.innerHTML= `<svg style='margin-left: auto; margin-right: 10px;' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                                 <img style='margin-top: 10px;' src='${e.getAttribute("src")}' alt='${e.getAttribute("alt")}' width='90%' alt='${e.getAttribute("alt")}' loading='lazy'>`;
@@ -140,10 +141,15 @@ elements.forEach(e => {
 });
 
 // Animation de fond
-document.querySelector(".area").style.height= document.querySelector("main").offsetHeight+"px";
+// document.querySelector(".area").style.height= document.querySelector("main").offsetHeight+"px";
+// setInterval(() => {
+//     document.querySelector(".area").style.height= document.querySelector("main").offsetHeight+"px";
+//     console.log(window.innerWidth);
+// }, 100);
+
+// console.log(document.querySelector("main").offsetHeight);
+
+// Taille du .area
 setInterval(() => {
     document.querySelector(".area").style.height= document.querySelector("main").offsetHeight+"px";
-    console.log(window.innerWidth);
 }, 100);
-
-console.log(screen.height)

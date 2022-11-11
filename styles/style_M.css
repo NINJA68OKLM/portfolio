@@ -1,3 +1,10 @@
+/* Taille des zones */
+
+/* .area, main
+{
+    height: 100% !important;
+} */
+
 .circles
 {
     width: 93%;
@@ -63,7 +70,7 @@
 
 /* Réalisations étudiantes */
 
-.etudiant, pro
+.etudiant, .pro
 {
     display: grid;
     grid-template-columns: 300px 300px;
