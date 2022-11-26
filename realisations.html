@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Toutes mes réalisations accomplies">
+    <meta name="description" content="Toutes mes réalisations">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="manifest" href="manifest.json">
     <link rel="preload" href="styles/style.css" as="style">
@@ -16,6 +16,9 @@
     <meta property="og:title" content="Portolio EKIZ Mustafa : Réalisations" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="img/logo EKIZ Mustafa.png" />
+    <meta property="og:description" content="Toutes mes réalisations" />
+    <meta property="og:url" content="https://mustafa-ekiz-portfolio.netlify.app/" />
+    <meta property="og:site_name" content="Portfolio Mustafa EKIZ" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,200&display=swap" rel="stylesheet"> 
@@ -73,7 +76,7 @@
             </div>
         </div>
         <div class="partthree flex hide">
-            <a href="mentions-legales.html" >Mentions légales</a>
+            <a href="PDF/Mustafa_Ekiz_CV.pdf" class="CV">Mon CV</a>
         </div>
     </header>
     <main class="flex column centerc">
@@ -108,5 +111,14 @@
         </footer>
     </main>
     <script defer src="js/script.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HX2X2LFNR"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7HX2X2LFNR');
+    </script>
 </body>
 </html>

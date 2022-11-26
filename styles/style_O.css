@@ -179,6 +179,22 @@ footer
 {
     grid-template-columns: 300px 300px 300px;
 }
+.info
+{
+    margin-bottom: 0px;
+}
+#info
+{
+    width: 350px;
+}
+.infoappear
+{
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    height: 99vh;
+}
 
 /* Réalisations pro */
 

@@ -4,6 +4,7 @@ function submenu(){
     document.querySelector(".area").classList.toggle("top");
     document.querySelector("main").classList.toggle("top");
     document.querySelector(".parttwo").classList.toggle("hide");
+    document.querySelector(".partthree").classList.toggle("hide");
 }
 // Taille des anim
 document.querySelector(".area");

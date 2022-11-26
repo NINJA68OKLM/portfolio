@@ -16,6 +16,9 @@
     <meta property="og:title" content="Portolio EKIZ Mustafa : Etudiant" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="img/logo EKIZ Mustafa.png" />
+    <meta property="og:description" content="Les projets que j'ai réalisé en tant qu'étudiant" />
+    <meta property="og:url" content="https://mustafa-ekiz-portfolio.netlify.app/" />
+    <meta property="og:site_name" content="Portfolio Mustafa EKIZ" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script
@@ -69,7 +72,7 @@
             </div>
         </div>
         <div class="partthree flex hide">
-            <a href="mentions-legales.html" >Mentions légales</a>
+            <a href="PDF/Mustafa_Ekiz_CV.pdf" class="CV">Mon CV</a>
         </div>
     </header>
     <main class="flex column centerc">
@@ -83,7 +86,6 @@
                         <div class="blanc"></div>
                         <div class="titre">Do It</div>
                     </div>
-                    
                 </a>
                 <button class="info" id="do-it" data-name="info/do-it.txt">Info</button>
             </div>
@@ -94,31 +96,27 @@
                         <div class="titre">Orangutans Equality</div>
                     </div>
                 </a>
-                <button class="info" id="do-it">Info</button>
+                <button class="info" id="orangutans-equality" data-name="info/orangutans-equality.txt">Info</button>
             </div>
         </div>
         <h2>Infographie/Multimédia</h2>
         <div class="ligne flex column centerc etudiant">
             <div>
-                <iframe class="iframe espacedroite bloc" id="cinq" width="300" height="169" src="https://www.youtube.com/embed/2-TNBz87Hvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tempp-id="2000" temp-id="2"></iframe> <br>
-                <button class="info" id="do-it">Info</button>
+                <iframe class="iframe espacedroite bloc" id="cinq" width="300" height="169" src="https://www.youtube.com/embed/2-TNBz87Hvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tempp-id="2000" temp-id="2"></iframe> 
+                <button class="info" id="scott-mcbroeglin" data-name="info/scott-mcbroeglin.txt">Info</button>
             </div>
             <div>
                 <iframe class="iframe bloc" width="301" height="169" src="https://www.youtube.com/embed/ShrpiP--yF0" title="PIC VERT EKIZ Mustafa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tempp-id="2500" temp-id="2.5"></iframe>
-                <button class="info" id="do-it">Info</button>
+                <button class="info" id="pic-vert" data-name="info/pic-vert.txt">Info</button>
             </div>
             <div>
                 <iframe class="iframe bloc" width="300" height="169" src="https://www.youtube.com/embed/xjHEiI-YMgo" title="Rendu 3D EKIZ Mustafa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen tempp-id="3500" temp-id="3"></iframe>
-                <button class="info" id="do-it">Info</button>
+                <button class="info" id="rendu3D" data-name="info/rendu-3d.txt">Info</button>
             </div>
             <div>
                 <img class="iframe bloc" src="img/EKIZ_Portrait_masque.jpg" alt="Noé Zimmermann - EKIZ Mustafa" loading="lazy" srcset="" tempp-id="4000" temp-id="4">
-                <button class="info" id="do-it">Info</button>
+                <button class="info" id="noe-zimmermann" data-name="info/noe-zimmermann.txt">Info</button>
             </div>
-
-            
-            
-            
         </div>
         <h2>Maquettes</h2>
         <div class="ligne flex column centerc etudiant">
@@ -127,7 +125,7 @@
                     <div class="blanc"></div>
                     <div class="titre">Refonte Skillet</div>
                 </div>
-                <button class="info" id="do-it">Info</button>
+                <button class="info" id="maquette-skillet" data-name="info/maquette-skillet.txt">Info</button>
             </a>
         </div>
         <footer class="flex space">
@@ -138,5 +136,14 @@
     <div id="info"></div>
     <script defer src="js/script.js"></script>
     <script defer src="js/info.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HX2X2LFNR"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7HX2X2LFNR');
+    </script>
 </body>
 </html>

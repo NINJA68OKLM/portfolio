@@ -1,0 +1,11 @@
+Site réalisé en tant que projet tutoré lors du 3ème semestre du DUT - MMI. <br><br>
+
+L'objectif des projets tutorés était de rendre trois livrables : un site web, une vidéo ainsi qu'un logo. <br><br>
+
+Les livrables devaient êtres des supports de communication pour une agence fictif que nous avions soit fondé lors du semestre précédent, soit inventé une nouvelle lors de ce semestre. <br><br>
+
+Ainsi notre équipe a choisi de partir sur une agence de protection des orangs-outans oeuvrant pour leur sauvetage, leur protection mais aussi dans la sensibilisation. <br><br>
+
+La <a href=''>vidéo</a> a été réalisé par <a href=''>Valentin Colombo</a>, le logo par <a href=''>Osman Adi</a> et le site par moi-même.<br><br>
+
+Le site web est très simple. Il s'agit d'un one-page avec 4 grandes sections, dont l'une menant vers un diaporama réalisé avec JavaScript et l'autre vers la vidéo. Le site est responsive et respectueuse de la charte graphique établie par Osman Adi.

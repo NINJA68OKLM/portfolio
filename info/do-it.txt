@@ -1,1 +1,11 @@
-Site réalisé pendant les projets tutorés
+Site réalisé en tant que projet tutoré pendant la semaine bloqué de janvier 2021 avec <a href=''>Albin Bekovic</a>. <br><br>
+
+Lors de cette semaine nous devions rendre trois livrables : un site web, une vidéo ainsi qu'un logo. <br><br>
+
+Les livrables devaient se conformer à la thématique imposé qui était le sport. <br><br>
+
+Ainsi notre équipe a choisi de partir sur une agence de coaching fictif ayant mit en place ses moyens de communication. <br><br>
+
+La <a href=''>vidéo</a> a été réalisé par <a href=''>Valentin Colombo</a> et le logo par <a href=''>Osman Adi</a>.<br><br>
+
+Le plus gros livrable étant le site web, nous nous sommes chargé de le réaliser à deux. Albin s'est occupé des designs de quelques pages (les plus réussis du site) tandis que je me suis occupé du développement et le responsive du site.
