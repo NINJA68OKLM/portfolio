@@ -154,3 +154,12 @@ elements.forEach(e => {
 setInterval(() => {
     document.querySelector(".area").style.height= document.querySelector("main").offsetHeight+"px";
 }, 100);
+
+// Survol des blocs
+document.querySelectorAll(".bloc.redirection, .liste.grid.competence").forEach(e => {
+    e.addEventListener("mouseover", changeColor);
+    e.addEventListener("mouseout", changeColor);
+});
+function changeColor() {
+    this.classList.toggle("changebackground");
+}

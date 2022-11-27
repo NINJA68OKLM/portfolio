@@ -429,6 +429,10 @@ footer>a
     padding: 10px;
     color: #000000;
 }
+.changebackground
+{
+    background: #D03939 !important;
+}
 
 /* Page d'accueil */
 
