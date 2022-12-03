@@ -424,6 +424,7 @@ footer>a
 }
 .info
 {
+    background: #FFFFFF;
     border: 1px solid #000000;
     border-radius: 10px;
     padding: 10px;
@@ -432,6 +433,12 @@ footer>a
 .changebackground
 {
     background: #D03939 !important;
+}
+.changebackgroundinfo
+{
+    border: 1px solid #000;
+    color: #FFF;
+    background: #D03939;
 }
 
 /* Page d'accueil */
@@ -529,6 +536,21 @@ footer>a
 .infoappear
 {
     padding: 15px;
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    height: 99vh;
+}
+.contenuinfo
+{
+    height: 100%;
+    overflow-y: scroll;
+}
+#closeinfo
+{
+    background: #FFF;
+    border-radius: 15px;
 }
 
 /* Compétences */

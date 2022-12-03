@@ -189,11 +189,7 @@ footer
 }
 .infoappear
 {
-    position: fixed;
-    z-index: 10;
-    right: 0;
-    top: 0;
-    height: 99vh;
+    border-radius: 25px 0px 0px 0px;
 }
 
 /* Réalisations pro */

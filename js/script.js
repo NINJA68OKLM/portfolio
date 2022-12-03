@@ -163,3 +163,20 @@ document.querySelectorAll(".bloc.redirection, .liste.grid.competence").forEach(e
 function changeColor() {
     this.classList.toggle("changebackground");
 }
+// Survol des boutons "infos"
+document.querySelectorAll(".info").forEach(e => {
+    e.addEventListener("mouseover", changeInfoColor);
+    e.addEventListener("mouseout", changeInfoColor);
+});
+function changeInfoColor() {
+    this.classList.toggle("changebackgroundinfo");
+}
+
+// Infos
+// document.querySelector(".partone>svg").addEventListener("click", submenu);
+// document.querySelector(".closee").addEventListener("click", closee);
+
+// function closee(event){
+//     event.preventDefault();
+//     console.log("khgvd");
+// }
