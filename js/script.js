@@ -156,7 +156,7 @@ setInterval(() => {
 }, 100);
 
 // Survol des blocs
-document.querySelectorAll(".bloc.redirection, .liste.grid.competence").forEach(e => {
+document.querySelectorAll(".bloc.redirection:not(.bloc.redirection.flex.column.bloci), .liste.grid.competence").forEach(e => {
     e.addEventListener("mouseover", changeColor);
     e.addEventListener("mouseout", changeColor);
 });
